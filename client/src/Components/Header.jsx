@@ -17,6 +17,7 @@ const Header = () => {
             type="text "
             placeholder="Search..."
             className="bg-transparent focus:outline-none w-24 sm:w-64"
+            
           />
           <FaSearch className="text-slate-600" />
         </form>
@@ -32,9 +33,7 @@ const Header = () => {
             </li>
           </Link>
           <Link to="/sign-in">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
-              SignIn
-            </li>
+            <li className="sm:inline text-slate-700 hover:underline">SignIn</li>
           </Link>
         </ul>
       </div>
