@@ -45,7 +45,7 @@ export const google = async (req, res, next) => {
       const { password: pass, ...rest } = user._doc;
 
       res
-        .cookies("access_token", token, { httpOnly: true })
+        .cookie("access_token", token, { httpOnly: true })
         .status(200)
         .json(rest);
     } else {
